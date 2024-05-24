@@ -12,6 +12,8 @@ BOT_NAME = "scrapy_project"
 SPIDER_MODULES = ["scrapy_project.spiders"]
 NEWSPIDER_MODULE = "scrapy_project.spiders"
 
+ITEM_PIPELINES = {'scrapy.pipelines.files.FilesPipeline': 1}
+FILES_STORE = "Documents"
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = "scrapy_project (+http://www.yourdomain.com)"
